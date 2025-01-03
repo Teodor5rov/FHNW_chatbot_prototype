@@ -1,0 +1,162 @@
+[
+    {
+        "query": "what is the number of the head of bit?",
+        "correct_response": "Prof. Dr. Michael Pülz: +41 61 279 18 42"
+    },
+    {
+        "query": "tell me about bit",
+        "correct_response": "information about Bachelor of Science in Business Information Technology (BIT)"
+    },
+    {
+        "query": "who is terry?",
+        "correct_response": "information about Dr. Terry Inglese"
+    },
+    {
+        "query": "what are the fees for non-eu students in the business information technology degree?",
+        "correct_response": "tuition fee is CHF 5,700 per semester"
+    },
+    {
+        "query": "who does quantum computing and is related to medical informatics at fhnw?",
+        "correct_response": "Prof. Dr. Clément Javerzac"
+    },
+    {
+        "query": "are there application fees for international students wanting to study visual communication?",
+        "correct_response": "application fee is CHF 200"
+    },
+    {
+        "query": "how many students are there in fhnw?",
+        "correct_response": "13,600 students enrolled, with 11,006 in bachelor's degree programs and 2,606 in master's degree programs"
+    },
+    {
+        "query": "what language level do I need to study medical informatics?",
+        "correct_response": "english level C1"
+    },
+    {
+        "query": "how many ects is the international business management and in which universities is the program?",
+        "correct_response": "210 ECTS in FHNW, DHBW, UHA"
+    },
+    {
+        "query": "what are the specializations of the bit program?",
+        "correct_response": "Data science, Digital Trust and Digital Business Management"
+    },
+    {
+        "query": "when was the school of life sciences founded?",
+        "correct_response": "in 2006"
+    },
+    {
+        "query": "who is the program head of business ai?",
+        "correct_response": "Prof. Dr. Knut Hinkelmann."
+    },
+    {
+        "query": "what modules are in the 5th semester the part-time studies in Business Information Technology?",
+        "correct_response": "Statistics and Probability, Logistics and Supply Chain Management, Business Intelligence, Topics in Business Information Technology, IT-Security"
+    },
+    {
+        "query": "how many ects is the computer science international track?",
+        "correct_response": "110 credits"
+    },
+    {
+        "query": "what is the duration of the bachelor program in visual communication?",
+        "correct_response": "6 semesters"
+    },
+    {
+        "query": "is the bachelor program in visual communication part-time?",
+        "correct_response": "no, it is only fulltime"
+    },
+    {
+        "query": "what is the location of the academy of arts and design?",
+        "correct_response": "Freilager-Platz 1 Münchenstein Basel"
+    },
+    {
+        "query": "what are the opening hours of the reception of the academy of arts and design?",
+        "correct_response": "Monday to Friday 07.30 - 12.00 Uhr/13.00 - 17.00 Uhr"
+    },
+    {
+        "query": "what is the final application date for the master digital communication environments?",
+        "correct_response": "Saturday, March 15, 2025."
+    },
+    {
+        "query": "how many ects is the master digital communication environments?",
+        "correct_response": "120 ects"
+    },
+    {
+        "query": "give me the alumni website fhnw",
+        "correct_response": "https://www.alumni-fhnw.ch/"
+    },
+    {
+        "query": "what should be the mountly budget of a student in fhnw?",
+        "correct_response": "approximately CHF 1,000 to 1,500 per month"
+    },
+    {
+        "query": "I want to know more about the swiss education system, give me a resource?",
+        "correct_response": "https://www.edk.ch/de/bildungssystem"
+    },
+    {
+        "query": "who is the head of program of visual communication?",
+        "correct_response": "Prof. Marion Fink."
+    },
+    {
+        "query": "do I need to know programming before I study bit?",
+        "correct_response": "previous programming knowledge is not necessary/no specific programming knowledge is required"
+    },
+    {
+        "query": "give me the link to the embedded systems design specialization in the ics trinational program",
+        "correct_response": "https://www.fhnw.ch/en/degree-programmes/engineering/electrical-and-information-technology/embedded-systems-design"
+    },
+    {
+        "query": "does the Information Communication Systems trinational degree offer a specialization for web?",
+        "correct_response": "Yes, the Information Communication Systems trinational degree program offers a specialization in Web Engineering."
+    },
+    {
+        "query": "what is the fee for swiss international mba?",
+        "correct_response": "The fee for the Swiss-International MBA program is CHF 23,800"
+    },
+    {
+        "query": "what kind of continuing education products does fhnw offer?",
+        "correct_response": "MBA, MAS, DAS, CAS"
+    },
+    {
+        "query": "where is the business AI taught?",
+        "correct_response": "Business Artificial Intelligence is taught in Olten"
+    },
+    {
+        "query": "when are the introductory weeks? visual communication",
+        "correct_response": "Introductory weeks - 01 to 12 September 2025 "
+    },
+    {
+        "query": "what is the minimum english level for engineering master mse?",
+        "correct_response": "The minimum English language for the Master of Science in Engineering (MSE) is B2 level"
+    },
+    {
+        "query": "how many from the electives group do I need for the master data sci from life science?",
+        "correct_response": "For the Master of Science in Life Sciences with a specialization in Data Science at FHNW, you need to choose 2 out of 8 elective modules"
+    },
+    {
+        "query": "what methods for supervised learning should students learn in the foundation in machine learning module?",
+        "correct_response": "Logistic Regression, Naive Bayes, Decision Trees, Random Forests, Support Vector Machines (SVM), K-Nearest Neighbors (kNN)"
+    },
+    {
+        "query": "How many schools does FHNW have?",
+        "correct_response": "FHNW has nine schools"
+    },
+    {
+        "query": "Where is the school of psychology located?",
+        "correct_response": "The School of Applied Psychology is located in Olten"
+    },
+    {
+        "query": "How many bachelor programs are there?",
+        "correct_response": "FHNW offers 34 bachelor's degree programmes"
+    },
+    {
+        "query": "When is next information event for Visual Communication?",
+        "correct_response": "The next information event for Visual Communication will take place on Friday, January 17, 2025"
+    },
+    {
+        "query": "how can I get to the school of business in basel?",
+        "correct_response": "To get to the School of Business located at Peter Merian-Strasse 86, Basel, you can take tram lines 1, 2, or 8 to the main Basel SBB station or take tram lines 10 or 11 to the Peter Merian stop"
+    },
+    {
+        "query": "who is the head of Bachelor in Computer Science?",
+        "correct_response": "Prof. Dr. Christoph Denzler"
+    }
+]

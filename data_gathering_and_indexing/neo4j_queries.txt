@@ -1,0 +1,71 @@
+CALL gds.graph.drop('myGraph')
+YIELD graphName, nodeCount, relationshipCount;
+
+CALL gds.graph.project(
+  'myGraph',
+  'Page',
+  {
+    LINKS_TO: {
+      orientation: 'UNDIRECTED'
+    }
+  },
+  {
+    nodeProperties: ['component_id']  // Include component_id in node properties
+  }
+)
+YIELD graphName, nodeCount, relationshipCount;
+
+CALL gds.wcc.write(
+  'myGraph',
+  {
+    writeProperty: 'component_id'
+  }
+)
+YIELD componentCount;
+
+
+CALL gds.graph.nodeProperty.stream('myGraph', 'component_id')
+YIELD nodeId, propertyValue AS compId
+WITH compId, count(*) AS compSize
+WHERE compSize < 10
+RETURN collect(compId) AS smallComps
+
+:param smallComps => [68, 121, 127, 129, 651, 653, 1246, 1405, 1717, 1720, 1725, 1748, 1750, 1751, 1757, 1760, 1764, 1766, 1767, 1774, 1777, 1781, 1792, 1819, 1838, 1854, 1867, 1868, 1869, 1871, 1877, 1891, 1904, 1905, 1913, 1930, 1948, 1953, 1964, 1970, 1972, 1976, 1977, 1982, 1990, 1992, 1993, 2004, 2006, 2007, 2010, 2016, 2029, 2030, 2041, 2043, 2046, 2047, 2054, 2068, 2074, 2097, 2101, 2112, 2124, 2129, 2135, 2136, 2139, 2144, 2147, 2148, 2152, 2163, 2164, 2173, 2192, 2197, 2205, 2215, 2223, 2231, 2232, 2245, 2247, 2249, 2270, 2282, 2297, 2306, 2322, 2331, 2355, 2360, 2363, 2370, 2383, 2384, 2385, 2387, 2389, 2392, 2398, 2403, 2418, 2420, 2439, 2446, 2449, 2454, 2467, 2468, 2479, 2482, 2490, 2504, 2505, 2506, 2533, 2539, 2541, 2550, 2552, 2554, 2555, 2561, 2562, 2567, 2569, 2574, 2607, 2653, 2660, 2661, 2662, 3058]
+
+CALL gds.graph.drop('myGraphWithoutSmall')
+
+MATCH (p:Page)
+WHERE NOT p.component_id IN $smallComps
+SET p:FilteredPage
+
+CALL gds.graph.project(
+  'myGraphWithoutSmall',
+  'FilteredPage',
+  {
+    LINKS_TO: {
+      orientation: 'UNDIRECTED'
+    }
+  }
+)
+YIELD graphName, nodeCount, relationshipCount;
+
+CALL gds.leiden.write(
+  'myGraphWithoutSmall',
+  {
+    writeProperty: 'community_id'
+  }
+)
+YIELD communityCount, modularity, modularities;
+
+MATCH (p:Page)
+WHERE p.component_id IN $smallComps
+SET p.community_id = 9999;
+
+MATCH (p:FilteredPage)
+REMOVE p:FilteredPage
+
+MATCH (n:Page)
+REMOVE n.component_id
+
+CALL gds.graph.drop('myGraphWithoutSmall')
+CALL gds.graph.drop('myGraph')
